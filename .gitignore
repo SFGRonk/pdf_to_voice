@@ -1,0 +1,6 @@
+*.txt
+*.pdf
+*.mp3
+
+.venv/
+venv/
