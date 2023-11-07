@@ -16,8 +16,8 @@ def pdf_to_voice(file_path='test.pdf', language='en'):
         text = ''.join(pages)
         text = text.replace('\n', '')
 
-        with open('text.txt', 'w') as file:
-            file.write(text)
+        # with open('text.txt', 'w') as file:
+        #     file.write(text)
 
         my_audio = gTTS(text=text, lang=language, slow=False)
         file_name = Path(file_path).stem
